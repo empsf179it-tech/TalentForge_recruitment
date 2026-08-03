@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TalentForge Recruitment | Building Exceptional Teams</title>
+    <meta name="description" content="Global Recruitment Consultancy helping companies hire the best employees across multiple industries. Building Exceptional Teams. Empowering Future Careers.">
+    
+    <!-- Open Graph / SEO -->
+    <meta property="og:title" content="TalentForge Recruitment">
+    <meta property="og:description" content="Global Recruitment Consultancy helping companies hire the best employees.">
+    <meta property="og:type" content="website">
+    
+    <!-- External CSS Libraries -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <i data-lucide="layers" class="logo-icon"></i>
+                TalentForge
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="services.html" class="nav-link">Services</a></li>
+                <li><a href="employer-solutions.html" class="nav-link">Employer Solutions</a></li>
+                <li><a href="industries.html" class="nav-link">Industries</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i data-lucide="moon"></i>
+                </button>
+                <a href="contact.html" class="btn btn-primary">Hire Talent</a>
+                <button class="mobile-menu-btn" aria-label="Menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Background Blobs -->
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+    </div>
+
+    <!-- SECTION 1: Immersive Hero Section -->
+    <header class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-content" data-aos="fade-right">
+                <h1>Building <span class="text-gradient">Exceptional</span> Teams Worldwide</h1>
+                <p>We partner with visionary companies to recruit top-tier talent across industries. Empowering future careers and driving business growth through strategic talent acquisition.</p>
+                <div class="hero-actions">
+                    <a href="contact.html" class="btn btn-primary">Hire Talent <i data-lucide="arrow-right"></i></a>
+                    <a href="services.html" class="btn btn-secondary">Explore Services</a>
+                </div>
+                <div class="trusted-by">
+                    <p>Trusted by Industry Leaders</p>
+                    <div class="logos-wrap">
+                        <i data-lucide="command" style="width: 32px; height: 32px;"></i>
+                        <i data-lucide="framer" style="width: 32px; height: 32px;"></i>
+                        <i data-lucide="figma" style="width: 32px; height: 32px;"></i>
+                        <i data-lucide="slack" style="width: 32px; height: 32px;"></i>
+                        <i data-lucide="gitlab" style="width: 32px; height: 32px;"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visuals" data-aos="fade-left" data-aos-delay="200">
+                <div class="hero-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Corporate Team Meeting">
+                    <div class="hero-img-overlay"></div>
+                </div>
+                
+                <div class="floating-stat stat-1">
+                    <div class="stat-icon"><i data-lucide="users"></i></div>
+                    <div class="stat-info">
+                        <h4>10k+</h4>
+                        <p>Placements</p>
+                    </div>
+                </div>
+                <div class="floating-stat stat-2">
+                    <div class="stat-icon"><i data-lucide="globe"></i></div>
+                    <div class="stat-info">
+                        <h4>25+</h4>
+                        <p>Countries</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECTION 2: Interactive Hiring Journey -->
+    <section class="hiring-journey">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Our <span class="text-gradient">Recruitment</span> Process</h2>
+                <p>A seamless, data-driven approach to finding your next top performer.</p>
+            </div>
+            
+            <div class="timeline-wrapper">
+                <div class="timeline-track">
+                    <div class="timeline-line"></div>
+                    <div class="timeline-progress"></div>
+                    
+                    <!-- Nodes -->
+                    <div class="timeline-node">
+                        <div class="node-point active"></div>
+                        <div class="node-content">
+                            <i data-lucide="target" style="color: var(--color-primary); margin-bottom: 8px;"></i>
+                            <h3>Requirement Analysis</h3>
+                            <p style="font-size: 0.875rem;">Understanding business goals and technical needs.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-node">
+                        <div class="node-point"></div>
+                        <div class="node-content">
+                            <i data-lucide="search" style="color: var(--color-primary); margin-bottom: 8px;"></i>
+                            <h3>Talent Discovery</h3>
+                            <p style="font-size: 0.875rem;">Sourcing passive and active top candidates globally.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-node">
+                        <div class="node-point"></div>
+                        <div class="node-content">
+                            <i data-lucide="file-text" style="color: var(--color-primary); margin-bottom: 8px;"></i>
+                            <h3>Resume Screening</h3>
+                            <p style="font-size: 0.875rem;">AI and human-led filtering for perfect fit.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-node">
+                        <div class="node-point"></div>
+                        <div class="node-content">
+                            <i data-lucide="code" style="color: var(--color-primary); margin-bottom: 8px;"></i>
+                            <h3>Technical Assessment</h3>
+                            <p style="font-size: 0.875rem;">Rigorous skill evaluation and profiling.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-node">
+                        <div class="node-point"></div>
+                        <div class="node-content">
+                            <i data-lucide="video" style="color: var(--color-primary); margin-bottom: 8px;"></i>
+                            <h3>Interview Coordination</h3>
+                            <p style="font-size: 0.875rem;">Seamless scheduling with hiring managers.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-node">
+                        <div class="node-point"></div>
+                        <div class="node-content">
+                            <i data-lucide="briefcase" style="color: var(--color-primary); margin-bottom: 8px;"></i>
+                            <h3>Offer Management</h3>
+                            <p style="font-size: 0.875rem;">Negotiation and transparent communication.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-node">
+                        <div class="node-point"></div>
+                        <div class="node-content">
+                            <i data-lucide="check-circle" style="color: var(--color-primary); margin-bottom: 8px;"></i>
+                            <h3>Successful Hiring</h3>
+                            <p style="font-size: 0.875rem;">Onboarding support for long-term retention.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: AI Talent Intelligence Dashboard -->
+    <section class="intelligence-dashboard">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Talent <span class="text-gradient">Intelligence</span></h2>
+                <p>Data-driven insights ensuring high-quality placements at scale.</p>
+            </div>
+            
+            <div class="dashboard-grid">
+                <div class="dash-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="dash-icon"><i data-lucide="users"></i></div>
+                    <div>
+                        <div class="dash-value" data-target="150" data-suffix="k+">0</div>
+                        <p>Active Candidates Pool</p>
+                    </div>
+                </div>
+                <div class="dash-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="dash-icon"><i data-lucide="building-2"></i></div>
+                    <div>
+                        <div class="dash-value" data-target="500" data-suffix="+">0</div>
+                        <p>Companies Hiring</p>
+                    </div>
+                </div>
+                <div class="dash-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="dash-icon"><i data-lucide="clock"></i></div>
+                    <div>
+                        <div class="dash-value" data-target="14" data-suffix=" Days">0</div>
+                        <p>Average Hiring Time</p>
+                    </div>
+                </div>
+                <div class="dash-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="dash-icon"><i data-lucide="bar-chart-2"></i></div>
+                    <div>
+                        <div class="dash-value" data-target="98" data-suffix="%">0</div>
+                        <p>Placement Success Rate</p>
+                    </div>
+                </div>
+                <div class="dash-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="dash-icon"><i data-lucide="check-square"></i></div>
+                    <div>
+                        <div class="dash-value" data-target="92" data-suffix="%">0</div>
+                        <p>Offer Acceptance Ratio</p>
+                    </div>
+                </div>
+                <div class="dash-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="dash-icon"><i data-lucide="smile"></i></div>
+                    <div>
+                        <div class="dash-value" data-target="4.9" data-suffix="/5">0</div>
+                        <p>Candidate Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: Interactive Industry Expertise -->
+    <section class="industry-expertise">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Industry <span class="text-gradient">Expertise</span></h2>
+                <p>Specialized recruitment solutions tailored for niche industry demands.</p>
+            </div>
+            
+            <div class="industry-grid">
+                <!-- Tech -->
+                <div class="industry-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="industry-bg" style="background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="industry-overlay">
+                        <h3 class="industry-title"><i data-lucide="cpu"></i> Technology</h3>
+                        <div class="industry-details">
+                            <ul>
+                                <li><span>Popular Roles:</span><span>Software Eng, AI</span></li>
+                                <li><span>Hiring Time:</span><span>12 Days</span></li>
+                                <li><span>Talent Pool:</span><span>High</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Healthcare -->
+                <div class="industry-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="industry-bg" style="background-image: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="industry-overlay">
+                        <h3 class="industry-title"><i data-lucide="heart-pulse"></i> Healthcare</h3>
+                        <div class="industry-details">
+                            <ul>
+                                <li><span>Popular Roles:</span><span>Specialists, R&D</span></li>
+                                <li><span>Hiring Time:</span><span>20 Days</span></li>
+                                <li><span>Talent Pool:</span><span>Moderate</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Finance -->
+                <div class="industry-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="industry-bg" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="industry-overlay">
+                        <h3 class="industry-title"><i data-lucide="pie-chart"></i> Finance</h3>
+                        <div class="industry-details">
+                            <ul>
+                                <li><span>Popular Roles:</span><span>Analysts, FinTech</span></li>
+                                <li><span>Hiring Time:</span><span>15 Days</span></li>
+                                <li><span>Talent Pool:</span><span>High</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Manufacturing -->
+                <div class="industry-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="industry-bg" style="background-image: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="industry-overlay">
+                        <h3 class="industry-title"><i data-lucide="factory"></i> Manufacturing</h3>
+                        <div class="industry-details">
+                            <ul>
+                                <li><span>Popular Roles:</span><span>Plant Managers, QA</span></li>
+                                <li><span>Hiring Time:</span><span>18 Days</span></li>
+                                <li><span>Talent Pool:</span><span>Moderate</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add 4 more quickly for symmetry -->
+                <div class="industry-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="industry-bg" style="background-image: url('https://images.unsplash.com/photo-1541888081622-297593c726c0?auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="industry-overlay">
+                        <h3 class="industry-title"><i data-lucide="hard-hat"></i> Construction</h3>
+                        <div class="industry-details">
+                            <ul>
+                                <li><span>Popular Roles:</span><span>Project Managers</span></li>
+                                <li><span>Hiring Time:</span><span>21 Days</span></li>
+                                <li><span>Talent Pool:</span><span>Low</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="industry-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="industry-bg" style="background-image: url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="industry-overlay">
+                        <h3 class="industry-title"><i data-lucide="shopping-bag"></i> Retail</h3>
+                        <div class="industry-details">
+                            <ul>
+                                <li><span>Popular Roles:</span><span>E-commerce Heads</span></li>
+                                <li><span>Hiring Time:</span><span>10 Days</span></li>
+                                <li><span>Talent Pool:</span><span>High</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="industry-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="industry-bg" style="background-image: url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="industry-overlay">
+                        <h3 class="industry-title"><i data-lucide="graduation-cap"></i> Education</h3>
+                        <div class="industry-details">
+                            <ul>
+                                <li><span>Popular Roles:</span><span>EdTech Leads</span></li>
+                                <li><span>Hiring Time:</span><span>14 Days</span></li>
+                                <li><span>Talent Pool:</span><span>Moderate</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="industry-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="industry-bg" style="background-image: url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="industry-overlay">
+                        <h3 class="industry-title"><i data-lucide="truck"></i> Logistics</h3>
+                        <div class="industry-details">
+                            <ul>
+                                <li><span>Popular Roles:</span><span>Supply Chain Mgrs</span></li>
+                                <li><span>Hiring Time:</span><span>16 Days</span></li>
+                                <li><span>Talent Pool:</span><span>Moderate</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: Corporate Success Stories -->
+    <section class="success-stories">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Corporate <span class="text-gradient">Success Stories</span></h2>
+                <p>How we helped industry leaders build their dream teams.</p>
+            </div>
+            
+            <div class="swiper story-swiper" data-aos="fade-up">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="story-card">
+                            <div class="story-content">
+                                <h3>FinTechCorp Global</h3>
+                                <p>Scaling an engineering team from 10 to 150 across 3 continents.</p>
+                                
+                                <div class="story-timeline">
+                                    <div class="st-item">
+                                        <h4>Before Hiring</h4>
+                                        <p>Struggling with 6-month vacant roles and poor culture fit.</p>
+                                    </div>
+                                    <div class="st-item">
+                                        <h4>Recruitment Process</h4>
+                                        <p>Deployed dedicated AI screening and specialized recruiters.</p>
+                                    </div>
+                                    <div class="st-item">
+                                        <h4>Successful Placement</h4>
+                                        <p>140 engineers hired in 8 months. 98% retention rate.</p>
+                                    </div>
+                                    <div class="st-item">
+                                        <h4>Business Growth</h4>
+                                        <p>Product launched 3 months ahead of schedule.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="story-visual">
+                                <img src="https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=800&q=80" alt="Corporate Success">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more slides if needed, Swiper allows easy swiping -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: Premium CTA Banner -->
+    <section class="container" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="premium-cta">
+            <div class="cta-shapes">
+                <div class="cta-shape shape-1"></div>
+                <div class="cta-shape shape-2"></div>
+            </div>
+            <div class="cta-content">
+                <h2>Let's Build Your Dream Workforce</h2>
+                <p style="font-size: 1.25rem; margin-bottom: 2rem; opacity: 0.9;">Partner with TalentForge to transform your talent acquisition strategy today.</p>
+                <div class="cta-actions">
+                    <a href="contact.html" class="btn" style="background: #fff; color: var(--color-primary);">Hire Talent</a>
+                    <a href="contact.html" class="btn btn-secondary">Schedule Consultation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <i data-lucide="layers" class="logo-icon"></i>
+                        TalentForge
+                    </a>
+                    <p>Building Exceptional Teams. Empowering Future Careers. We are a premier global recruitment consultancy.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i data-lucide="linkedin"></i></a>
+                        <a href="#" class="social-link"><i data-lucide="twitter"></i></a>
+                        <a href="#" class="social-link"><i data-lucide="facebook"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="industries.html">Industries</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    <div class="footer-links">
+                        <a href="services.html">Executive Search</a>
+                        <a href="services.html">Permanent Staffing</a>
+                        <a href="services.html">Contract Staffing</a>
+                        <a href="services.html">Remote Hiring</a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="footer-title">Newsletter</h4>
+                    <p style="margin-bottom: 1rem; font-size: 0.875rem;">Get the latest insights on talent acquisition.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault()">
+                        <input type="email" placeholder="Business Email" required>
+                        <button type="submit"><i data-lucide="send"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 TalentForge Recruitment. All rights reserved.</p>
+                <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+                    <i data-lucide="arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
