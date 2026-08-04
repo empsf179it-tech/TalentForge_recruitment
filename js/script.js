@@ -33,6 +33,60 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initialize Lucide Icons
   lucide.createIcons();
 
+  // Mobile Menu Logic
+  const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+  const navLinks = document.querySelector('.nav-links');
+  const themeToggleBtn = document.querySelector('.theme-toggle');
+  const ctaBtn = document.querySelector('.nav-actions .btn');
+  const navActions = document.querySelector('.nav-actions');
+  
+  if (mobileMenuBtn && navLinks) {
+    mobileMenuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      if (navLinks.classList.contains('active')) {
+        mobileMenuBtn.innerHTML = '<i data-lucide="x"></i>';
+        
+        // Move items into the dropdown
+        if (themeToggleBtn) {
+          const liTheme = document.createElement('li');
+          liTheme.className = 'mobile-extra';
+          liTheme.appendChild(themeToggleBtn);
+          navLinks.appendChild(liTheme);
+          themeToggleBtn.style.display = 'flex';
+        }
+        if (ctaBtn) {
+          const liCta = document.createElement('li');
+          liCta.className = 'mobile-extra';
+          liCta.appendChild(ctaBtn);
+          navLinks.appendChild(liCta);
+          ctaBtn.style.display = 'inline-flex';
+        }
+      } else {
+        mobileMenuBtn.innerHTML = '<i data-lucide="menu"></i>';
+        
+        // Restore items to header
+        if (themeToggleBtn) {
+          themeToggleBtn.style.display = '';
+          navActions.insertBefore(themeToggleBtn, mobileMenuBtn);
+        }
+        if (ctaBtn) {
+          ctaBtn.style.display = '';
+          navActions.insertBefore(ctaBtn, mobileMenuBtn);
+        }
+        
+        // Remove empty wrappers
+        document.querySelectorAll('.mobile-extra').forEach(el => el.remove());
+      }
+      lucide.createIcons();
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 1024 && navLinks.classList.contains('active')) {
+        mobileMenuBtn.click();
+      }
+    });
+  }
+
   // Navbar Scroll Effect
   const navbar = document.querySelector('.navbar');
   const scrollProgress = document.getElementById('scroll-progress');

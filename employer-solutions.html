@@ -1,129 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employer Solutions | TalentForge Recruitment</title>
-    
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+<link rel="icon" type="image/png" href="./images/website-logo.png">
 </head>
+
 <body>
     <div class="scroll-progress" id="scroll-progress"></div>
 
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <i data-lucide="layers" class="logo-icon"></i>
-                TalentForge
-            </a>
-            
+            <a href="index.html" class="logo"><img src="./images/website-logo.png" alt="TalentForge Logo" style="height: 40px; width: auto; object-fit: contain; background: transparent; display: block;"> TalentForge</a>
+
             <ul class="nav-links">
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="services.html" class="nav-link">Services</a></li>
                 <li><a href="employer-solutions.html" class="nav-link active">Employer Solutions</a></li>
                 <li><a href="industries.html" class="nav-link">Industries</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
 
             <div class="nav-actions">
                 <button class="theme-toggle" id="theme-toggle"><i data-lucide="moon"></i></button>
-                <a href="contact.html" class="btn btn-primary">Hire Talent</a>
+                <a href="hire-talent.html" class="btn btn-primary">Hire Talent</a>
                 <button class="mobile-menu-btn"><i data-lucide="menu"></i></button>
             </div>
         </div>
     </nav>
 
     <!-- Section 1: Enterprise Hiring Hero -->
-    <header class="employer-hero" style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/hero_hiring.png');">
-        <div class="container hero-content" data-aos="fade-up">
-            <h1 class="hero-title">Strategic Hiring Solutions for <span class="text-gradient">Growing Businesses</span></h1>
-            <p class="hero-desc">Partner with TalentForge to find the right talent faster and more efficiently. We empower your business with high-performing individuals who drive growth and innovation.</p>
-            
-            <div class="hero-actions">
-                <a href="#solutions" class="btn btn-primary">Hire Top Talent</a>
-                <a href="contact.html" class="btn btn-outline" style="color: white; border-color: white;">Schedule a Consultation</a>
-            </div>
-
-            <div class="hero-stats-glass">
-                <div class="stat-item">
-                    <h3>5000+</h3>
-                    <p>Successful Placements</p>
-                </div>
-                <div class="stat-item">
-                    <h3>350+</h3>
-                    <p>Business Clients</p>
-                </div>
-                <div class="stat-item">
-                    <h3>95%</h3>
-                    <p>Hiring Success Rate</p>
-                </div>
-                <div class="stat-item">
-                    <h3>15+</h3>
-                    <p>Industries Served</p>
-                </div>
-            </div>
+    <header class="page-hero">
+        <div class="container">
+            <h1>Strategic Hiring Solutions for <span class="text-gradient">Growing Businesses</span></h1>
+            <p>Partner with TalentForge to find the right talent faster and more efficiently. We empower your business with high-performing individuals who drive growth and innovation.</p>
         </div>
     </header>
 
-    <!-- Section 2: Recruitment Solutions Showcase -->
-    <section id="solutions" class="solutions-showcase">
-        <div class="container">
-            <div class="section-header" data-aos="fade-up">
-                <h2>Our <span class="text-gradient">Recruitment Solutions</span></h2>
-                <p>Comprehensive hiring strategies tailored for enterprise scalability.</p>
+    <!-- Section 2: The Employer Advantage -->
+    <section id="advantage" class="employer-advantage-section">
+        <div class="container ea-container">
+            <div class="ea-left">
+                <h2>The <span class="text-gradient">Employer Advantage</span></h2>
+                <p>We don't just fill vacancies. We partner with you to build high-performing teams that drive long-term
+                    business growth and innovation.</p>
+                <div style="margin-top: 3rem; margin-bottom: 3rem;">
+                    <a href="hire-talent.html" class="btn btn-primary">Start Hiring <i data-lucide="arrow-right"
+                            style="margin-left: 0.5rem; width: 18px;"></i></a>
+                </div>
+                <div class="ea-image-wrap"
+                    style="border-radius: 24px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                    <img src="images/Successful Hiring.png" alt="Successful Hiring"
+                        style="width: 100%; height: auto; object-fit: cover;">
+                </div>
             </div>
+            <div class="ea-right">
+                <div class="ea-card">
+                    <div class="ea-icon-wrap"><i data-lucide="award" style="width: 32px; height: 32px;"></i></div>
+                    <div class="ea-card-content">
+                        <h3>Access to the Top 1%</h3>
+                        <p>We tap into exclusive global networks, alumni groups, and passive candidate pools to find
+                            elite talent that isn't actively looking.</p>
+                    </div>
+                </div>
 
-            <div class="solutions-grid">
-                <!-- 8 Cards -->
-                <div class="solution-card glass-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="icon-wrapper"><i data-lucide="briefcase"></i></div>
-                    <h3>Executive Search</h3>
-                    <p>Targeted headhunting for C-Suite executives and visionary leaders.</p>
-                    <a href="contact.html" class="learn-more">Learn More <i data-lucide="arrow-right"></i></a>
+                <div class="ea-card">
+                    <div class="ea-icon-wrap"><i data-lucide="cpu" style="width: 32px; height: 32px;"></i></div>
+                    <div class="ea-card-content">
+                        <h3>Data-Driven Matching</h3>
+                        <p>Our proprietary AI algorithms analyze thousands of data points to ensure perfect alignment in
+                            both technical capability and cultural fit.</p>
+                    </div>
                 </div>
-                <div class="solution-card glass-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="icon-wrapper"><i data-lucide="user-check"></i></div>
-                    <h3>Permanent Staffing</h3>
-                    <p>End-to-end recruitment ensuring long-term culture and skill alignment.</p>
-                    <a href="contact.html" class="learn-more">Learn More <i data-lucide="arrow-right"></i></a>
+
+                <div class="ea-card">
+                    <div class="ea-icon-wrap"><i data-lucide="zap" style="width: 32px; height: 32px;"></i></div>
+                    <div class="ea-card-content">
+                        <h3>Accelerated Hiring Cycle</h3>
+                        <p>Our optimized screening processes and pre-vetted pipelines reduce average time-to-hire by up
+                            to 40% without compromising quality.</p>
+                    </div>
                 </div>
-                <div class="solution-card glass-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="icon-wrapper"><i data-lucide="clock"></i></div>
-                    <h3>Contract Staffing</h3>
-                    <p>Agile talent deployment for project-based and seasonal demands.</p>
-                    <a href="contact.html" class="learn-more">Learn More <i data-lucide="arrow-right"></i></a>
-                </div>
-                <div class="solution-card glass-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="icon-wrapper"><i data-lucide="layers"></i></div>
-                    <h3>Recruitment Process Outsourcing (RPO)</h3>
-                    <p>Comprehensive outsourcing of your entire recruitment function.</p>
-                    <a href="contact.html" class="learn-more">Learn More <i data-lucide="arrow-right"></i></a>
-                </div>
-                <div class="solution-card glass-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="icon-wrapper"><i data-lucide="users"></i></div>
-                    <h3>Bulk Hiring</h3>
-                    <p>Scalable recruitment solutions for rapid expansion and growth.</p>
-                    <a href="contact.html" class="learn-more">Learn More <i data-lucide="arrow-right"></i></a>
-                </div>
-                <div class="solution-card glass-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="icon-wrapper"><i data-lucide="graduation-cap"></i></div>
-                    <h3>Campus Recruitment</h3>
-                    <p>Strategic university hiring to build your entry-level talent pipeline.</p>
-                    <a href="contact.html" class="learn-more">Learn More <i data-lucide="arrow-right"></i></a>
-                </div>
-                <div class="solution-card glass-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="icon-wrapper"><i data-lucide="monitor"></i></div>
-                    <h3>Remote Workforce Hiring</h3>
-                    <p>Sourcing and vetting top-tier talent for distributed organizations.</p>
-                    <a href="contact.html" class="learn-more">Learn More <i data-lucide="arrow-right"></i></a>
-                </div>
-                <div class="solution-card glass-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="icon-wrapper"><i data-lucide="globe"></i></div>
-                    <h3>International Recruitment</h3>
-                    <p>Global talent acquisition with compliance and relocation support.</p>
-                    <a href="contact.html" class="learn-more">Learn More <i data-lucide="arrow-right"></i></a>
+
+                <div class="ea-card">
+                    <div class="ea-icon-wrap"><i data-lucide="shield-check" style="width: 32px; height: 32px;"></i>
+                    </div>
+                    <div class="ea-card-content">
+                        <h3>Guaranteed Retention</h3>
+                        <p>We are so confident in our matching process that we offer extended replacement guarantees.
+                            95% of our placements stay beyond year one.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -132,15 +101,15 @@
     <!-- Section 3: Smart Hiring Strategy -->
     <section class="hiring-strategy">
         <div class="container">
-            <div class="section-header" data-aos="fade-up">
+            <div class="section-header">
                 <h2>Smart <span class="text-gradient">Hiring Strategy</span></h2>
                 <p>A proven, data-driven methodology to secure top performers.</p>
             </div>
 
             <div class="timeline-container">
                 <div class="timeline-line"></div>
-                
-                <div class="timeline-step" data-aos="fade-right">
+
+                <div class="timeline-step">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content glass-card">
                         <div class="timeline-icon"><i data-lucide="file-text"></i></div>
@@ -149,7 +118,7 @@
                     </div>
                 </div>
 
-                <div class="timeline-step right-step" data-aos="fade-left">
+                <div class="timeline-step right-step">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content glass-card">
                         <div class="timeline-icon"><i data-lucide="target"></i></div>
@@ -158,7 +127,7 @@
                     </div>
                 </div>
 
-                <div class="timeline-step" data-aos="fade-right">
+                <div class="timeline-step">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content glass-card">
                         <div class="timeline-icon"><i data-lucide="search"></i></div>
@@ -167,7 +136,7 @@
                     </div>
                 </div>
 
-                <div class="timeline-step right-step" data-aos="fade-left">
+                <div class="timeline-step right-step">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content glass-card">
                         <div class="timeline-icon"><i data-lucide="cpu"></i></div>
@@ -176,7 +145,7 @@
                     </div>
                 </div>
 
-                <div class="timeline-step" data-aos="fade-right">
+                <div class="timeline-step">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content glass-card">
                         <div class="timeline-icon"><i data-lucide="code"></i></div>
@@ -185,7 +154,7 @@
                     </div>
                 </div>
 
-                <div class="timeline-step right-step" data-aos="fade-left">
+                <div class="timeline-step right-step">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content glass-card">
                         <div class="timeline-icon"><i data-lucide="calendar"></i></div>
@@ -194,7 +163,7 @@
                     </div>
                 </div>
 
-                <div class="timeline-step" data-aos="fade-right">
+                <div class="timeline-step">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content glass-card">
                         <div class="timeline-icon"><i data-lucide="award"></i></div>
@@ -203,7 +172,7 @@
                     </div>
                 </div>
 
-                <div class="timeline-step right-step" data-aos="fade-left">
+                <div class="timeline-step right-step">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content glass-card">
                         <div class="timeline-icon"><i data-lucide="check-circle"></i></div>
@@ -216,17 +185,19 @@
     </section>
 
     <!-- Section 4: Partner With Us CTA -->
-    <section class="partner-cta" style="background-image: linear-gradient(rgba(10, 15, 28, 0.8), rgba(10, 15, 28, 0.8)), url('./images/cta_team.png');">
+    <section class="partner-cta">
         <div class="container">
-            <div class="cta-glass-panel" data-aos="zoom-in">
+            <div class="cta-glass-panel">
                 <h2>Let's Build Your <span class="text-gradient">High-Performing Workforce</span> Together</h2>
-                <p>Discover how our premium recruitment solutions can transform your business. Partner with industry experts committed to your success.</p>
-                
+                <p>Discover how our premium recruitment solutions can transform your business. Partner with industry
+                    experts committed to your success.</p>
+
                 <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-primary">Request Hiring Consultation</a>
-                    <a href="contact.html" class="btn btn-outline" style="color: white; border-color: white;">Contact Recruitment Expert</a>
+                    <a href="hire-talent.html" class="btn btn-primary">Request Hiring Consultation</a>
+                    <a href="hire-talent.html" class="btn btn-outline" style="color: white; border-color: white;">Contact
+                        Recruitment Expert</a>
                 </div>
-                
+
                 <div class="cta-contact-details">
                     <div class="contact-item">
                         <i data-lucide="mail"></i>
@@ -237,7 +208,7 @@
                         <span>+1 (800) 555-0198</span>
                     </div>
                 </div>
-                
+
                 <div class="response-badge">
                     <i data-lucide="clock"></i>
                     <span>We Respond Within 24 Hours</span>
@@ -248,19 +219,70 @@
 
     <footer class="footer">
         <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo"><img src="./images/website-logo.png" alt="TalentForge Logo" style="height: 40px; width: auto; object-fit: contain; background: transparent; display: block;"> TalentForge</a>
+                    <p>Building Exceptional Teams. Empowering Future Careers. We are a premier global recruitment
+                        consultancy.</p>
+                                                            <div class="social-links">
+                        <a href="#" class="social-link" title="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" style="fill: none; stroke: currentColor;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                        <a href="#" class="social-link" title="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" style="fill: none; stroke: currentColor;"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="#" class="social-link" title="X (Twitter)">
+                            <svg width="20" height="20" viewBox="0 0 24 24" style="fill: currentColor; stroke: none;"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" title="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" style="fill: none; stroke: currentColor;"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <div class="footer-links">
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About Us</a>
+                        <a href="industries.html">Industries</a>
+                        <a href="hire-talent.html">Contact</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Services</h4>
+                    <div class="footer-links">
+                        <a href="services.html">Executive Search</a>
+                        <a href="services.html">Permanent Staffing</a>
+                        <a href="services.html">Contract Staffing</a>
+                        <a href="services.html">Remote Hiring</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Newsletter</h4>
+                    <p style="margin-bottom: 1rem; font-size: 0.875rem;">Get the latest insights on talent acquisition.
+                    </p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault()">
+                        <input type="email" placeholder="Business Email" required>
+                        <button type="submit"><i data-lucide="send"></i></button>
+                    </form>
+                </div>
+            </div>
+
             <div class="footer-bottom">
                 <p>&copy; 2026 TalentForge Recruitment. All rights reserved.</p>
-                <button class="back-to-top" id="backToTop"><i data-lucide="arrow-up"></i></button>
+                <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+                    <i data-lucide="arrow-up"></i>
+                </button>
             </div>
         </div>
     </footer>
 
     <script src="https://unpkg.com/lucide@latest"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="./js/script.js"></script>
-    
+
     <script>
         // Specific GSAP animations for Employer Solutions
         document.addEventListener('DOMContentLoaded', () => {
@@ -292,4 +314,5 @@
         });
     </script>
 </body>
+
 </html>

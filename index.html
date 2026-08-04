@@ -17,6 +17,7 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./css/style.css">
+<link rel="icon" type="image/png" href="./images/website-logo.png">
 </head>
 <body>
     <!-- Scroll Progress -->
@@ -25,10 +26,7 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <i data-lucide="layers" class="logo-icon"></i>
-                TalentForge
-            </a>
+            <a href="index.html" class="logo"><img src="./images/website-logo.png" alt="TalentForge Logo" style="height: 40px; width: auto; object-fit: contain; background: transparent; display: block;"> TalentForge</a>
             
             <ul class="nav-links">
                 <li><a href="index.html" class="nav-link active">Home</a></li>
@@ -36,14 +34,13 @@
                 <li><a href="services.html" class="nav-link">Services</a></li>
                 <li><a href="employer-solutions.html" class="nav-link">Employer Solutions</a></li>
                 <li><a href="industries.html" class="nav-link">Industries</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
 
             <div class="nav-actions">
                 <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Dark Mode">
                     <i data-lucide="moon"></i>
                 </button>
-                <a href="contact.html" class="btn btn-primary">Hire Talent</a>
+                <a href="hire-talent.html" class="btn btn-primary">Hire Talent</a>
                 <button class="mobile-menu-btn" aria-label="Menu">
                     <i data-lucide="menu"></i>
                 </button>
@@ -64,7 +61,7 @@
                 <h1>Building <span class="text-gradient">Exceptional</span> Teams Worldwide</h1>
                 <p>We partner with visionary companies to recruit top-tier talent across industries. Empowering future careers and driving business growth through strategic talent acquisition.</p>
                 <div class="hero-actions">
-                    <a href="contact.html" class="btn btn-primary">Hire Talent <i data-lucide="arrow-right"></i></a>
+                    <a href="hire-talent.html" class="btn btn-primary">Hire Talent <i data-lucide="arrow-right"></i></a>
                     <a href="services.html" class="btn btn-secondary">Explore Services</a>
                 </div>
                 <div class="trusted-by">
@@ -112,64 +109,76 @@
             
             <div class="timeline-wrapper">
                 <div class="timeline-track">
-                    <div class="timeline-line"></div>
-                    <div class="timeline-progress"></div>
                     
                     <!-- Nodes -->
                     <div class="timeline-node">
                         <div class="node-point active"></div>
-                        <div class="node-content">
-                            <i data-lucide="target" style="color: var(--color-primary); margin-bottom: 8px;"></i>
-                            <h3>Requirement Analysis</h3>
-                            <p style="font-size: 0.875rem;">Understanding business goals and technical needs.</p>
+                        <div class="node-content" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                            <img src="images/Reqirement analysis.png" alt="Requirement Analysis" style="width: 100%; height: 180px; display: block; margin: 0; object-fit: cover;">
+                            <div style="padding: 24px;">
+                                <h3 style="margin-top: 0;">Requirement Analysis</h3>
+                                <p style="font-size: 0.875rem; margin-bottom: 0;">Understanding business goals and technical needs.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="timeline-node">
                         <div class="node-point"></div>
-                        <div class="node-content">
-                            <i data-lucide="search" style="color: var(--color-primary); margin-bottom: 8px;"></i>
-                            <h3>Talent Discovery</h3>
-                            <p style="font-size: 0.875rem;">Sourcing passive and active top candidates globally.</p>
+                        <div class="node-content" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                            <img src="images/Talent Discovery.png" alt="Talent Discovery" style="width: 100%; height: 180px; display: block; margin: 0; object-fit: cover;">
+                            <div style="padding: 24px;">
+                                <h3 style="margin-top: 0;">Talent Discovery</h3>
+                                <p style="font-size: 0.875rem; margin-bottom: 0;">Sourcing passive and active top candidates globally.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="timeline-node">
                         <div class="node-point"></div>
-                        <div class="node-content">
-                            <i data-lucide="file-text" style="color: var(--color-primary); margin-bottom: 8px;"></i>
-                            <h3>Resume Screening</h3>
-                            <p style="font-size: 0.875rem;">AI and human-led filtering for perfect fit.</p>
+                        <div class="node-content" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                            <img src="images/Resume Screening.png" alt="Resume Screening" style="width: 100%; height: 180px; display: block; margin: 0; object-fit: cover;">
+                            <div style="padding: 24px;">
+                                <h3 style="margin-top: 0;">Resume Screening</h3>
+                                <p style="font-size: 0.875rem; margin-bottom: 0;">AI and human-led filtering for perfect fit.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="timeline-node">
                         <div class="node-point"></div>
-                        <div class="node-content">
-                            <i data-lucide="code" style="color: var(--color-primary); margin-bottom: 8px;"></i>
-                            <h3>Technical Assessment</h3>
-                            <p style="font-size: 0.875rem;">Rigorous skill evaluation and profiling.</p>
+                        <div class="node-content" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                            <img src="images/Technical Assessment.png" alt="Technical Assessment" style="width: 100%; height: 180px; display: block; margin: 0; object-fit: cover;">
+                            <div style="padding: 24px;">
+                                <h3 style="margin-top: 0;">Technical Assessment</h3>
+                                <p style="font-size: 0.875rem; margin-bottom: 0;">Rigorous skill evaluation and profiling.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="timeline-node node-bottom">
                         <div class="node-point"></div>
-                        <div class="node-content">
-                            <i data-lucide="video" style="color: var(--color-primary); margin-bottom: 8px;"></i>
-                            <h3>Interview Coordination</h3>
-                            <p style="font-size: 0.875rem;">Seamless scheduling with hiring managers.</p>
+                        <div class="node-content" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                            <img src="images/Interview Coordination.png" alt="Interview Coordination" style="width: 100%; height: 180px; display: block; margin: 0; object-fit: cover;">
+                            <div style="padding: 24px;">
+                                <h3 style="margin-top: 0;">Interview Coordination</h3>
+                                <p style="font-size: 0.875rem; margin-bottom: 0;">Seamless scheduling with hiring managers.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="timeline-node node-bottom">
                         <div class="node-point"></div>
-                        <div class="node-content">
-                            <i data-lucide="briefcase" style="color: var(--color-primary); margin-bottom: 8px;"></i>
-                            <h3>Offer Management</h3>
-                            <p style="font-size: 0.875rem;">Negotiation and transparent communication.</p>
+                        <div class="node-content" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                            <img src="images/Offer Management.png" alt="Offer Management" style="width: 100%; height: 180px; display: block; margin: 0; object-fit: cover;">
+                            <div style="padding: 24px;">
+                                <h3 style="margin-top: 0;">Offer Management</h3>
+                                <p style="font-size: 0.875rem; margin-bottom: 0;">Negotiation and transparent communication.</p>
+                            </div>
                         </div>
                     </div>
                     <div class="timeline-node node-bottom">
                         <div class="node-point"></div>
-                        <div class="node-content">
-                            <i data-lucide="check-circle" style="color: var(--color-primary); margin-bottom: 8px;"></i>
-                            <h3>Successful Hiring</h3>
-                            <p style="font-size: 0.875rem;">Onboarding support for long-term retention.</p>
+                        <div class="node-content" style="padding: 0; overflow: hidden; display: flex; flex-direction: column;">
+                            <img src="images/Successful Hiring.png" alt="Successful Hiring" style="width: 100%; height: 180px; display: block; margin: 0; object-fit: cover;">
+                            <div style="padding: 24px;">
+                                <h3 style="margin-top: 0;">Successful Hiring</h3>
+                                <p style="font-size: 0.875rem; margin-bottom: 0;">Onboarding support for long-term retention.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -186,46 +195,46 @@
             </div>
             
             <div class="dashboard-grid">
-                <div class="dash-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="dash-icon"><i data-lucide="users"></i></div>
-                    <div>
+                <div class="dash-card" data-aos="fade-up" data-aos-delay="100" style="padding: 0;">
+                    <img src="images/Active Candidates Pool.png" alt="Active Candidates Pool" style="width: 100%; height: 180px; display: block; margin: 0; object-fit: cover;">
+                    <div style="padding: 24px;">
                         <div class="dash-value" data-target="150" data-suffix="k+">0</div>
-                        <p>Active Candidates Pool</p>
+                        <p style="margin-bottom: 0;">Active Candidates Pool</p>
                     </div>
                 </div>
-                <div class="dash-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="dash-icon"><i data-lucide="building-2"></i></div>
-                    <div>
+                <div class="dash-card" data-aos="fade-up" data-aos-delay="200" style="padding: 0;">
+                    <img src="images/Companies Hiring.png" alt="Companies Hiring" style="width: 100%; height: 180px; display: block; margin: 0; object-fit: cover;">
+                    <div style="padding: 24px;">
                         <div class="dash-value" data-target="500" data-suffix="+">0</div>
-                        <p>Companies Hiring</p>
+                        <p style="margin-bottom: 0;">Companies Hiring</p>
                     </div>
                 </div>
-                <div class="dash-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="dash-icon"><i data-lucide="clock"></i></div>
-                    <div>
+                <div class="dash-card" data-aos="fade-up" data-aos-delay="300" style="padding: 0;">
+                    <img src="images/Average Hiring Time.png" alt="Average Hiring Time" style="width: 100%; height: 180px; display: block; margin: 0; object-fit: cover;">
+                    <div style="padding: 24px;">
                         <div class="dash-value" data-target="14" data-suffix=" Days">0</div>
-                        <p>Average Hiring Time</p>
+                        <p style="margin-bottom: 0;">Average Hiring Time</p>
                     </div>
                 </div>
-                <div class="dash-card" data-aos="fade-up" data-aos-delay="400">
-                    <div class="dash-icon"><i data-lucide="bar-chart-2"></i></div>
-                    <div>
+                <div class="dash-card" data-aos="fade-up" data-aos-delay="400" style="padding: 0;">
+                    <img src="images/Placement Success Rate.png" alt="Placement Success Rate" style="width: 100%; height: 180px; display: block; margin: 0; object-fit: cover;">
+                    <div style="padding: 24px;">
                         <div class="dash-value" data-target="98" data-suffix="%">0</div>
-                        <p>Placement Success Rate</p>
+                        <p style="margin-bottom: 0;">Placement Success Rate</p>
                     </div>
                 </div>
-                <div class="dash-card" data-aos="fade-up" data-aos-delay="500">
-                    <div class="dash-icon"><i data-lucide="check-square"></i></div>
-                    <div>
+                <div class="dash-card" data-aos="fade-up" data-aos-delay="500" style="padding: 0;">
+                    <img src="images/Offer Acceptance Ratio.png" alt="Offer Acceptance Ratio" style="width: 100%; height: 180px; display: block; margin: 0; object-fit: cover;">
+                    <div style="padding: 24px;">
                         <div class="dash-value" data-target="92" data-suffix="%">0</div>
-                        <p>Offer Acceptance Ratio</p>
+                        <p style="margin-bottom: 0;">Offer Acceptance Ratio</p>
                     </div>
                 </div>
-                <div class="dash-card" data-aos="fade-up" data-aos-delay="600">
-                    <div class="dash-icon"><i data-lucide="smile"></i></div>
-                    <div>
+                <div class="dash-card" data-aos="fade-up" data-aos-delay="600" style="padding: 0;">
+                    <img src="images/Candidate Satisfaction.png" alt="Candidate Satisfaction" style="width: 100%; height: 180px; display: block; margin: 0; object-fit: cover;">
+                    <div style="padding: 24px;">
                         <div class="dash-value" data-target="4.9" data-suffix="/5">0</div>
-                        <p>Candidate Satisfaction</p>
+                        <p style="margin-bottom: 0;">Candidate Satisfaction</p>
                     </div>
                 </div>
             </div>
@@ -243,7 +252,7 @@
             <div class="industry-grid">
                 <!-- Tech -->
                 <div class="industry-card" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="industry-bg" style="background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="industry-bg" style="background-image: url('images/Technology.png');"></div>
                     <div class="industry-overlay">
                         <h3 class="industry-title"><i data-lucide="cpu"></i> Technology</h3>
                         <div class="industry-details">
@@ -257,7 +266,7 @@
                 </div>
                 <!-- Healthcare -->
                 <div class="industry-card" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="industry-bg" style="background-image: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="industry-bg" style="background-image: url('images/Healthcare.png');"></div>
                     <div class="industry-overlay">
                         <h3 class="industry-title"><i data-lucide="heart-pulse"></i> Healthcare</h3>
                         <div class="industry-details">
@@ -271,7 +280,7 @@
                 </div>
                 <!-- Finance -->
                 <div class="industry-card" data-aos="zoom-in" data-aos-delay="300">
-                    <div class="industry-bg" style="background-image: url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="industry-bg" style="background-image: url('images/Finance.png');"></div>
                     <div class="industry-overlay">
                         <h3 class="industry-title"><i data-lucide="pie-chart"></i> Finance</h3>
                         <div class="industry-details">
@@ -299,7 +308,7 @@
                 </div>
                 <!-- Add 4 more quickly for symmetry -->
                 <div class="industry-card" data-aos="zoom-in" data-aos-delay="100">
-                    <div class="industry-bg" style="background-image: url('https://images.unsplash.com/photo-1541888081622-297593c726c0?auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="industry-bg" style="background-image: url('images/Construction.png');"></div>
                     <div class="industry-overlay">
                         <h3 class="industry-title"><i data-lucide="hard-hat"></i> Construction</h3>
                         <div class="industry-details">
@@ -312,7 +321,7 @@
                     </div>
                 </div>
                 <div class="industry-card" data-aos="zoom-in" data-aos-delay="200">
-                    <div class="industry-bg" style="background-image: url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=600&q=80');"></div>
+                    <div class="industry-bg" style="background-image: url('images/Retail.png');"></div>
                     <div class="industry-overlay">
                         <h3 class="industry-title"><i data-lucide="shopping-bag"></i> Retail</h3>
                         <div class="industry-details">
@@ -411,8 +420,8 @@
                 <h2>Let's Build Your Dream Workforce</h2>
                 <p style="font-size: 1.25rem; margin-bottom: 2rem; opacity: 0.9;">Partner with TalentForge to transform your talent acquisition strategy today.</p>
                 <div class="cta-actions">
-                    <a href="contact.html" class="btn" style="background: #fff; color: var(--color-primary);">Hire Talent</a>
-                    <a href="contact.html" class="btn btn-secondary">Schedule Consultation</a>
+                    <a href="hire-talent.html" class="btn" style="background: #fff; color: var(--color-primary);">Hire Talent</a>
+                    <a href="hire-talent.html" class="btn btn-secondary">Schedule Consultation</a>
                 </div>
             </div>
         </div>
@@ -423,15 +432,21 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <a href="index.html" class="logo">
-                        <i data-lucide="layers" class="logo-icon"></i>
-                        TalentForge
-                    </a>
+                    <a href="index.html" class="logo"><img src="./images/website-logo.png" alt="TalentForge Logo" style="height: 40px; width: auto; object-fit: contain; background: transparent; display: block;"> TalentForge</a>
                     <p>Building Exceptional Teams. Empowering Future Careers. We are a premier global recruitment consultancy.</p>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i data-lucide="linkedin"></i></a>
-                        <a href="#" class="social-link"><i data-lucide="twitter"></i></a>
-                        <a href="#" class="social-link"><i data-lucide="facebook"></i></a>
+                                                            <div class="social-links">
+                        <a href="#" class="social-link" title="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" style="fill: none; stroke: currentColor;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                        <a href="#" class="social-link" title="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" style="fill: none; stroke: currentColor;"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                        <a href="#" class="social-link" title="X (Twitter)">
+                            <svg width="20" height="20" viewBox="0 0 24 24" style="fill: currentColor; stroke: none;"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                        </a>
+                        <a href="#" class="social-link" title="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" style="fill: none; stroke: currentColor;"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                        </a>
                     </div>
                 </div>
                 
@@ -441,7 +456,7 @@
                         <a href="index.html">Home</a>
                         <a href="about.html">About Us</a>
                         <a href="industries.html">Industries</a>
-                        <a href="contact.html">Contact</a>
+                        <a href="hire-talent.html">Contact</a>
                     </div>
                 </div>
                 
